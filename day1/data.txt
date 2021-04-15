@@ -1,4 +1,4 @@
-inputs = """1977
+1977
 1515
 1857
 1800
@@ -197,25 +197,4 @@ inputs = """1977
 1551
 1241
 1469
-1888"""
-
-# find two entries that sum together make 2020 and multiply them.
-
-nums = set(map(lambda x: int(x), inputs.split("\n")))
-
-found = False
-
-for x in nums:
-  if found:
-    break
-  for y in nums:
-    if found:
-      break
-    for z in nums:
-      if x + y + z == 2020:
-        print("xyz", x, y, z)
-        print("res", x * y * z)
-        found = True
-        break
-
-
+1888
